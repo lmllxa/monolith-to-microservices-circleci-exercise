@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   mybuildjob:
     docker:
-      - image: cimg/node:18 # the primary container, where your job's commands are run
+      - image: cimg/node:18.17.1 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
       - run: npm install
